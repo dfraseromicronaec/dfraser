@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGB Parts and Accessories Shop</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        header { text-align: center; background-color: #333; color: white; padding: 10px; }
+        nav { margin: 20px 0; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px; background-color: white; width: 300px; display: inline-block; vertical-align: top; }
+        .product img { width: 100%; height: auto; }
+        .product h3 { margin: 10px 0; }
+        .product button { background-color: #4CAF50; color: white; border: none; padding: 10px; cursor: pointer; }
+        footer { text-align: center; margin-top: 20px; color: #777; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MGB Parts and Accessories</h1>
+        <p>Your one-stop shop for restoring and upgrading your classic MG B roadster or GT. Quality parts since 1962 models.</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#cart">Cart (0)</a>
+    </nav>
+    
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Engine+Kit" alt="MGB Engine Rebuild Kit">
+            <h3>Engine Rebuild Kit</h3>
+            <p>Complete kit for 1.8L engines, including gaskets, pistons, and seals. Perfect for restoration.</p>
+            <p><strong>Price: $450</strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Brake+System" alt="MGB Brake Kit">
+            <h3>Disc Brake Conversion Kit</h3>
+            <p>Upgrade your MGB's braking with front disc brakes, calipers, rotors, and lines.</p>
+            <p><strong>Price: $250</strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Body+Parts" alt="MGB Body Panels">
+            <h3>Body Panels Set</h3>
+            <p>Fenders, doors for MGB roadsters and GTs. Rust-resistant steel construction.</p>
+            <p><strong>Price: $300</strong></strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Accessories" alt="MGB Interior Accessories">
+            <h3>Leather Seat Covers</h3>
+            <p>Custom-fit leather covers for MGB seats in black or tan. Enhance comfort and style.</p>
+            <p><strong>Price: $180</strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Exhaust+System" alt="MGB Exhaust">
+            <h3>Stainless Steel Exhaust System</h3>
+            <p>Full exhaust manifold and pipes for better performance and sound.</p>
+            <p><strong>Price: $220</strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Cooling+System" alt="MGB Radiator">
+            <h3>Aluminum Radiator</h3>
+            <p>High-flow radiator to keep your MGB engine cool during spirited drives.</p>
+            <p><strong>Price: $150</strong></p>
+            <button onclick="alert('Added to cart!')">Add to Cart</button>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in parts for classic MGB cars (1962-1980 models). All items are inspired by trusted sources in the MG community and come with a 1-year warranty. Shipping worldwide.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: info@mgbpartsshop.com | Phone: (123) 456-7890</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 MGB Parts Shop. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Simple JS for cart placeholder
+        let cartCount = 0;
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click", () => {
+                cartCount++;
+                document.querySelector('a[href="#cart"]').textContent = `Cart (${cartCount})`;
+            });
+        });
+    </script>
+</body>
+</html>
